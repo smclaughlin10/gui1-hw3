@@ -1,0 +1,45 @@
+<!--
+File: index.html
+GUI Assignment: HW3 - Creating an Interactive Dynamic Table
+Sean Mclaughlin, UMass Lowell Computer Science,
+Sean_Mclaughlin1@student.uml.edu
+Copyright (c) 2023 by Sean. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by SM on November 12, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/index.js"></script>
+		<title>Dynamic Table</title>
+	</head>
+	<body>
+		<h1>Interactive Dynamic Table</h1>
+		<main>
+			<div id="entireForm">
+				<form name="tableForm" id="tableForm">
+					<h2>Values of -50 to 50</h2>
+					<label for="startHorizontal">Min Column Value</label>
+					<input type="number" id="startHorizontal" name="startHorizontal">
+					<p id="paragraphSH" class="formErrorP"></p>
+					<label for="endHorizontal">Max Column Value</label>
+					<input type="number" id="endHorizontal" name="endHorizontal">
+					<p id="paragraphEH" class="formErrorP"></p>
+					<label for="startVertical">Min Row Value</label>
+					<input type="number" id="startVertical" name="startVertical">
+					<p id="paragraphSV" class="formErrorP"></p>
+					<label for="endVertical">Max Row Value</label>
+					<input type="number" id="endVertical" name="endVertical">
+					<p id="paragraphEV" class="formErrorP"></p>
+					<input type="button" onclick="formSubmit()" value="Submit">
+				</form>
+			</div>
+			<div id="tableContainer">
+				<div id="myTable"></div>
+			</div>
+		</main>
+	</body>
+</html>
